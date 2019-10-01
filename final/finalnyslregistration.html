@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>NYSL Registration</title>
+  <link rel="stylesheet" href="../styles/mf_nysl_style.css">
+</head>
+
+<body>
+  <img src="../Assets/images/Final_Images/blue_team_banner.jpg" alt="Blue Team Background" id="blueteambackground">
+  <div class="container">
+    <header>
+      <h1>Northside Youth Soccer League</h1>
+    </header>
+    <div class="navbar">
+      <div class="navbutton" id="homebuttonbackground">
+        <a id="homebutton" href="../Final/Finalnyslhome.html">Home</a>
+      </div>
+      <div class="navbutton" id="aboutbuttonbackground">
+        <a id="aboutbutton" href="../Final/Finalnyslabout.html">About</a>
+      </div>
+      <div class="navbutton" id="contactbuttonbackground">
+        <a id="contactbutton" href="../Final/Finalnyslcontact.html">Contact</a>
+      </div>
+      <div class="navbutton" id="gamebuttonbackground">
+        <a id="gameinfobutton" href="../Final/Finalnyslgameinfo.html">Game
+          Info</a>
+      </div>
+      <div class="navbutton" id="rulesbuttonbackground">
+        <div id="rulescontainer">
+          <a id="rulesbutton" href="../Final/Finalnyslrules.html">
+            <p id="rulesbutton1">Rules</p>
+            <p id="rulesbutton2">&</p>
+            <p id="rulesbutton3">Policies</p>
+          </a>
+        </div>
+      </div>
+      <div class="navbutton" id="registrationbuttonbackground">
+        <a id="registrationobutton" class="active" href="../Final/Finalnyslregistration.html">Registration</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <section>
+        <h2>NYSL Registration Form</h2>
+        <form action="show_data.html" method="GET">
+
+
+
+          <div class="form_section">
+            <div class="form_box_double">
+
+              <label for="firstname">Player's First Name:
+              </label>
+              <input id="firstname" name="first_name" type="text" required>
+              <label for="lastname">Last Name:
+              </label>
+              <input id="lastname" name="last_name" type="text" required>
+            </div>
+
+
+
+            <label for="streetaddress">Street Address:</label>
+            <input id="streetaddress" name="street_address" type="text" required>
+
+
+            <div class="form_box_double">
+              <label for="city">City:</label>
+              <input id="city" name="city" type="text" required>
+
+              <label for="zipcode">Zipcode:</label>
+              <input id="zipcode" name="street_address" type="text" min="5" required>
+            </div>
+
+
+            <div class="form_box_triple">
+
+              <label id="birthdate_label" for="birthdate">Birth Date:</label>
+              <input id="birthdate" name="birth_date" type="date" required>
+
+              <label id="gender_label">Gender:</label>
+              <div class="inline" id="gender">
+
+                <input id="male" name="gender" value="male" type="radio">
+                <label for="male">Male </label>
+
+                <input id="female" name="gender" value="female" type="radio">
+                <label for="female">Female</label>
+              </div>
+
+
+              <label id="grade_label" for="grade">Grade:</label>
+              <select name="grade" id="grade">
+                <option class="choose" value="none">Choose</option>
+                <option value="pre-school">Pre-school</option>
+                <option value="1st"> 1st </option>
+                <option value="2nd"> 2nd </option>
+                <option value="3rd"> 3rd </option>
+                <option value="4th"> 4th </option>
+                <option value="5th"> 5th </option>
+              </select>
+            </div>
+
+
+            <label for="parent_guardian">Parent/Guardian:</label>
+            <input type="text" id="parent_guardian" name="parent_guardian" required>
+
+            <div class="form_box_double">
+              <label for="contact_phone">Contact Phone:</label>
+              <input type="tel" id="contact_phone" name="contact_phone" required>
+
+              <label for="contact_email">Contact Email:</label>
+              <input type="email" id="contact_email" name="contact_email" required>
+            </div>
+          </div>
+          <div class="form_section">
+            <h3>Which elementary schools do you live near?</h3>
+
+            <div class="form_box_double">
+              <label for="first_closest_school">First Closest School:</label>
+              <select name="first_closest_school" id="first_closest_school">
+                <option class="choose" value="none">Choose</option>
+                <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                <option value="Greenbay"> Greenbay </option>
+                <option value="Howard A Yeager"> Howard A Yeager </option>
+                <option value="Marjorie P Hart"> Marjorie P Hart </option>
+                <option value="North Elementary"> North Elementary </option>
+                <option value="South Elementary"> South Elementary </option>
+              </select>
+
+
+              <label for="second_closest_school">Second Closest School:</label>
+              <select name="second_closest_school" id="second_closest_school">
+                <option class="choose" value="none">Choose</option>
+                <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                <option value="Greenbay"> Greenbay </option>
+                <option value="Howard A Yeager"> Howard A Yeager </option>
+                <option value="Marjorie P Hart"> Marjorie P Hart </option>
+                <option value="North Elementary"> North Elementary </option>
+                <option value="South Elementary"> South Elementary </option>
+              </select>
+            </div>
+          </div>
+          <div class="form_section">
+            <h3>What position(s) do you usually play?</h3>
+            <div class="paren">(check all that apply)</div>
+
+            <div class="form_box_quad">
+
+              <input id="forward" name="positions" value="forward" type="checkbox">
+              <label for="forward">Forward</label>
+
+              <input id="defense" name="positions" value="defense" type="checkbox">
+              <label for="defense">Defense</label>
+
+              <input id="midfield" name="positions" value="midfield" type="checkbox">
+              <label for="midfield">Midfield</label>
+
+              <input id="goalkeeper" name="positions" value="goalkeeper" type="checkbox">
+              <label for="goalkeeper">Goalkeeper</label>
+
+            </div>
+          </div>
+
+
+          <div class="form_section">
+            <div class="form_box_double">
+              <h3 class="uniform_label">Jersey Size:</h3>
+              <select name="jersey_size" id="jersey_size">
+                <option class="choose" value="none">Choose</option>
+                <option value="have_uniform">Already have uniform</option>
+                <option value="youth_small"> Youth Small </option>
+                <option value="youth_medium"> Youth Medium </option>
+                <option value="youth_large"> Youth Large </option>
+                <option value="small"> Small </option>
+                <option value="medium"> Medium </option>
+                <option value="large"> Large </option>
+                <option value="extra-large"> Extra-Large </option>
+              </select>
+
+              <h3 class="uniform_label">Shorts Size:</h3>
+              <select name="shorts_size" id="shorts_size">
+                <option class="choose" value="none">Choose</option>
+                <option value="have_uniform">Already have uniform</option>
+                <option value="youth_small"> Youth Small </option>
+                <option value="youth_medium"> Youth Medium </option>
+                <option value="youth_large"> Youth Large </option>
+                <option value="small"> Small </option>
+                <option value="medium"> Medium </option>
+                <option value="large"> Large </option>
+                <option value="extra-large"> Extra-Large </option>
+              </select>
+            </div>
+          </div>
+          <div class="form_section">
+            <h3>Permission to Play</h3>
+            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all
+              the
+              rules of the Northside Youth
+              Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in
+              consideration for the “League”
+              accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or
+              otherwise indemnify NYSL, their
+              employees and associated personnel and volunteers, including the facilities used for practices and
+              games,
+              against any claim by or
+              on behalf of the registrant as a result of the registrant’s participation in the program and/or being
+              transported to or from NYSL
+              sponsored activities, which transportation.
+              By signing below, I hereby agree and authorize the above. In addition, by signing below, I also
+              acknowledge that I have read the
+              cancellation policy and agree to its terms.</p>
+            <div class="form_box_double">
+              <label for="signature">Signature: </label>
+              <input id="signature" name="signature" type="text" required>
+              <label for="sign_date">Date: </label>
+              <input id="sign_date" name="sign_date" type="date" required>
+            </div>
+          </div>
+          <button name="submit">
+            Submit
+          </button>
+        </form>
+      </section>
+    </div>
+  </div>
+  <footer>
+    <a id="linkdin" href="https://www.linkedin.com/in/nikolas-mateer-008b07179">
+      <div class="footer_content">
+
+        <div class="nm_logo">
+          <div>Website by</div>
+          <div class="nm">Nikolas</div>
+          <div class="nm">Mateer</div>
+
+        </div>
+
+      </div>
+    </a>
+  </footer>
+</body>
+
+</html>
